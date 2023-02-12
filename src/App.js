@@ -1,22 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from "react";
+import ComA from "./ComA";
 
 const App = () => {
-  const [num, setNum] = useState(0);
 
-  useEffect(() => {
-   document.title = `you clicked me ${num} times`;
-  }, [num]);
   return (
     <div>
-      <button 
-        onClick={
-          (() => {
-          setNum(num + 1);
-      })
-      }
-      > 
-      Click me {num} 
-      </button>   
+      <ComA />
     </div>
   );
 };
