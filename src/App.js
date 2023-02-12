@@ -1,27 +1,24 @@
-import React, { createContext } from 'react';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import ComA from './ComA';
-// import Accordian from './Component/accordian/Accordian';
-// import Cards from './cardsapp/Cards';
-// import Keep from './Component/keepnoteapp/keep';
-
-const FirstName = createContext();
-const LastName = createContext();
-
+import React, { useEffect, useState } from 'react';
 
 const App = () => {
-  
+  const [num, setNum] = useState(0);
+
+  useEffect(() => {
+   document.title = `you clicked me ${num} times`;
+  }, [num]);
   return (
-    <>
-      <FirstName.Provider value={"swati"}> 
-        <LastName.Provider value={"Parmar"} >
-          <ComA />
-        </LastName.Provider>
-      </FirstName.Provider>
-    </>
-   
+    <div>
+      <button 
+        onClick={
+          (() => {
+          setNum(num + 1);
+      })
+      }
+      > 
+      Click me {num} 
+      </button>   
+    </div>
   );
 };
 
 export default App;
-export { FirstName, LastName };
