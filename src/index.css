@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+ a.active-style {
+  color: rgb(0, 21, 255);
+  border-bottom: 1px solid red;
+}
