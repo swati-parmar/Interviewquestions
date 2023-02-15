@@ -6,9 +6,9 @@ import { useParams } from 'react-router-dom';
 // };
 
 const User = () => {
-    const { fname, lname } = useParams();
+    const { firstname, lastname } = useParams();
     return  (
-        <h1>Hello {fname} {lname} page </h1>
+        <h1>Hello {firstname} {lastname} page </h1>
     )
 };
 
