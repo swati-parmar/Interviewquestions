@@ -1,8 +1,8 @@
 import React from "react";
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import About from "./Component/reactrouter/About";
 import Contact from "./Component/reactrouter/Contact";
-import Error from "./Component/reactrouter/Error";
+// import Error from "./Component/reactrouter/Error";
 import Menu from "./Component/reactrouter/Menu";
 import Service from "./Component/reactrouter/Service";
 import User from "./Component/reactrouter/User";
@@ -19,7 +19,8 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/search" element={<Search />} />
         <Route path="/user/:firstname/:lastname" element={<User />} />
-        <Route path="*" element={<Error />} />
+        {/* <Route path="*" element={<Error />} /> */}
+        <Route path="*" element={<Navigate replace to="/" />}   />
       </Routes>
       {/* <About />
       <Contact /> */}
