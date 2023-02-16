@@ -6,6 +6,7 @@ import Error from "./Component/reactrouter/Error";
 import Menu from "./Component/reactrouter/Menu";
 import Service from "./Component/reactrouter/Service";
 import User from "./Component/reactrouter/User";
+import  Search  from "./Component/reactrouter/Search";
 
 const App = () => {
 
@@ -16,6 +17,7 @@ const App = () => {
         <Route exact path='/' element={<About />} />
         <Route path='/service' element={<Service />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/search" element={<Search />} />
         <Route path="/user/:firstname/:lastname" element={<User />} />
         <Route path="*" element={<Error />} />
       </Routes>

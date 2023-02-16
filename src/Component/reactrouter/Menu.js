@@ -18,6 +18,10 @@ const Menu = () => {
                 Contact US
             </NavLink>
             <NavLink 
+                exact='true'  className={({isActive}) => (isActive ? "active-style" : 'none')} to='/search'> 
+                Search
+            </NavLink>
+            <NavLink 
                 exact='true'  className={({isActive}) => (isActive ? "active-style" : 'none')} to='/user/swati/parmar'> 
                 User
             </NavLink>
