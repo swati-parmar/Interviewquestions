@@ -38,3 +38,10 @@ code {
   border-radius: 5px;
   font-family: source-code-pro, Menlo, Monaco, Monaco, Consolas, "Courier New";
 }
+
+.err_page {
+  color: aqua;
+  background-size: 100%;
+  text-align: center;
+  font-size: xxx-large;
+}
